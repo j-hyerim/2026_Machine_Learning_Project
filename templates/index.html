@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트환경</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- chart.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+
+    </head>
+
+    <body>
+        <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h2>
+                    Top 1000 Most Viewed <br>
+                    YouTube Videos <br>
+                    (2026)
+                </h2>
+                <section class="section section01">
+                    <article id="iphone">
+                        <img src="../static/img/Apple.png" alt="">
+                    </article>
+                    <article id="ipad">
+                        <img src="../static/img/iPad .png" alt="">
+                    </article>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <div class="section02">
+                    <div>
+                        <h2 class="textLeft">
+                            A Data Visualization Report Based on 1,000 YouTube Video Records
+                        </h2>
+                        <p class="textLeft">
+                            1000개의 YouTube 영상 데이터를 활용한 데이터 시각화 보고서</p>
+                        <ul class="textLeft">
+                            <li>유튜브 영상 조회수와 좋아요 수를 활용한 K-Means 군집 분석</li>
+                            <li>숏폼(Shorts) vs 롱폼(Longs) 데이터 비교 분석 및 시각화</li>
+                            <li>유튜브 영상 제목 군집화 및 시각화</li>
+                            <li>유튜브 영상 조회수와 좋아요 수의 상관관계 분석 및 시각화</li>
+                            <li>텍스트 마이닝 기반 유튜브 영상 세부 카테고리 재분류 및 분포 시각화</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- section 01 - 전혜림 -->
+            <div class="swiper-slide">
+                <div class="swiper-slide">
+                    <div class="subtitle">
+                        <h2 class="textLeft">
+                            01. 조회수와 좋아요 수를 이용한 <br>K-Means 군집화 및 시각화 (전혜림)
+                        </h2>
+                        <p class="btn"><a href="#">VIEW CODE &gt; </a></p>
+                        <!-- <p class="textLeft"> -->
+                            <!-- 유튜브 영상의 조회수(Views)와 좋아요 수(Likes) 데이터를 불러와 분석합니다. 데이터에 포함된 K(천), M(백만), B(십억) 단위를 실제 숫자로 변환한 후, 데이터의 규모 차이에 따른 영향을 줄이기 위해 표준화를 수행합니다. 이후 K-Means 군집화 알고리즘을 적용하여 조회수와 좋아요 수가 유사한 영상들을 여러 개의 그룹으로 분류합니다. 마지막으로 각 데이터가 속한 군집 결과를 출력하고 산점도로 시각화하여 영상들의 특성과 군집 간 차이를 쉽게 확인할 수 있도록 합니다.</p> -->
+                        </div>
+                        <img src="../static/img/section01.png" alt="">
+                        <sub>조회수와 좋아요 수 데이터를 숫자로 변환·표준화한 뒤 K-Means 군집화를 적용하여 유사한 영상들을 그룹화하고, 결과를 출력 및 시각화</sub>
+
+                </div>
+            </div>
+            <!-- section 02 - 고권노 -->
+            <div class="swiper-slide">
+                <div class="swiper-slide">
+                    <div class="subtitle">
+                        <h2 class="textLeft">
+                            02. 숏폼(Shorts) vs 롱폼(Longs) <br>데이터 비교 분석(고권노-1)
+                        </h2>
+                        <p class="btn"><a href="#">VIEW CODE &gt; </a></p>
+                        </div>
+                        <img src="../static/img/section02.png" alt="">
+                        <sub>유튜브 데이터의 조회수·좋아요 수를 숫자로 변환하고 영상 포맷을 한글로 정제한 뒤, 쇼츠와 롱폼의 제목 길이 분포와 평균 좋아요 비율을 그래프로 비교 분석</sub>
+                </div>
+            </div>
+            <!-- section 03 - 고권노 -->
+            <div class="swiper-slide">
+                <div class="swiper-slide">
+                    <div class="subtitle">
+                        <h2 class="textLeft">
+                            03. 숏폼(Shorts) vs 롱폼(Longs) <br>데이터 비교 분석(고권노-2)
+                        </h2>
+                        <p class="btn"><a href="#">VIEW CODE &gt; </a></p>
+                        </div>
+                        <img src="../static/img/section03.png" alt="">
+                </div>
+            </div>
+            <!-- section 04 - 유해린 -->
+            <div class="swiper-slide">
+                <div class="swiper-slide">
+                    <div class="subtitle">
+                        <h2 class="textLeft">
+                            04. 텍스트 마이닝 기반 유튜브 영상 세부 <br>카테고리 재분류 및 분포(유해린)
+                        </h2>
+                        <p class="btn"><a href="#">VIEW CODE &gt; </a></p>
+                        </div>
+                        <img src="../static/img/section04.png" alt="">
+                        <sub>유튜브 영상 제목의 키워드를 기반으로 8개 카테고리로 재분류하고, 결측치를 포함한 1,000개 전체 데이터를 반영해 카테고리별 분포를 막대그래프로 시각화</sub>
+                </div>
+            </div>
+            <!-- section 05 - 신예립 -->
+            <div class="swiper-slide">
+                <div class="swiper-slide">
+                    <div class="subtitle">
+                        <h2 class="textLeft">
+                            05. 유튜브 영상 조회수와 좋아요 수의 <br>상관관계 분석(신예립)
+                        </h2>
+                        <p class="btn"><a href="#">VIEW CODE &gt; </a></p>
+                        </div>
+                        <img src="../static/img/section05.png" alt="">
+                        <sub>유튜브 조회수와 좋아요 수를 실제 숫자로 변환해 상관관계를 분석하고, 추세선이 포함된 산점도로 시각화</sub>
+                </div>
+            </div>
+            <!-- section 06 - 조성현 -->
+            <div class="swiper-slide">
+                <div class="swiper-slide">
+                    <div class="subtitle">
+                        <h2 class="textLeft">
+                            06. 유튜브 영상 제목 군집화(조성현)
+                        </h2>
+                        <p class="btn"><a href="#">VIEW CODE &gt; </a></p>
+                        </div>
+                        <img src="../static/img/section06.png" alt="">
+                        <sub>유튜브 영상 제목을 TF-IDF로 수치화한 후 K-Means 군집화로 5개 그룹으로 분류하고, 각 그룹의 영상 수를 막대그래프로 시각화</sub>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div> -->
+        </div>
+    <!-- </main> -->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        direction: "vertical",
+        // navigation: {
+        // nextEl: ".swiper-button-next",
+        // prevEl: ".swiper-button-prev",
+        // },
+        autoplay: {
+        delay: 7000, 
+        disableOnInteraction: false, 
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+    </script>
+
+</body>
+</html>

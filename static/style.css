@@ -114,7 +114,7 @@ ul li::before{
 
 /* butten css */
 .btn{
-    /* width: 270px; */
+    width: 270px;
     height: 55px;
     border-radius: 10px;
     /* border: 3px solid #333; */
@@ -244,14 +244,13 @@ ul li::before{
     font-size: 2vw;
 }
 .subtitle p{
-    font-size: 2vw;
+    font-size: 25px;
     color: #333;
     font-weight: bold;
 }
 
 /* butten css */
 .btn{
-    padding: 0% 3%;
     border-radius: 10px;
     box-shadow: 1px 1px 3px #333;
 }
